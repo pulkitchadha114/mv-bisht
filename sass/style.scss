@@ -1,0 +1,1010 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+@import "./typography/colors";
+@import "./header";
+@import "./footer";
+body {
+  font-family: "Poppins", sans-serif;
+}
+.home-banner {
+  // margin-top: -35px;
+  min-height: 768px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 992.98px) {
+    text-align: center;
+  }
+  h1 {
+    font-size: 55px;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 40px;
+    }
+  }
+  p {
+    font-size: 19px;
+    color: $white;
+    font-weight: 400;
+    @media (max-width: 575.98px) {
+      font-size: 16px;
+    }
+  }
+  a {
+    text-decoration: none;
+    button {
+      font-size: 22px;
+      font-weight: 500;
+      color: $blue;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      background-color: $white;
+      border-radius: 50px;
+      border: 2px solid $white;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: transparent;
+        color: $white;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.about-us {
+  padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 992.98px) {
+    text-align: center;
+  }
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  img {
+    border: 2px solid $blue;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  h2 {
+    font-size: 43px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $red;
+    @media (max-width: 992.98px) {
+      margin: 0 auto;
+      display: block;
+    }
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  p {
+    font-size: 22px;
+    color: $light-grey;
+    font-weight: 400;
+    margin-top: 20px;
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+    }
+  }
+  a {
+    text-decoration: none;
+    button {
+      font-size: 22px;
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      background-color: $blue;
+      border-radius: 50px;
+      border: 2px solid $white;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: red;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.plans {
+  background-color: #004d900d;
+  padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  /* @media (max-width: 992.98px) {
+    text-align: center;
+  } */
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $red;
+    @media (max-width: 992.98px) {
+      margin: 0 auto;
+      display: block;
+    }
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 14px 0px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: rgba($color: $blue, $alpha: 0.1);
+    }
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+    }
+    .box {
+      padding: 0px 25px;
+      @media (max-width: 575.98px) {
+        padding: 30px 20px;
+      }
+      h4 {
+        font-size: 28px;
+        color: $light-grey;
+        font-weight: 600;
+        text-transform: capitalize;
+        span {
+          font-weight: 700;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 23px;
+          text-align: center;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $light-grey;
+      font-weight: 400;
+      @media (max-width: 575.98px) {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    a {
+      text-decoration: none;
+      button {
+        font-size: 14px;
+        font-weight: 500;
+        color: $red;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        &::after {
+          transition: all 0.5s ease-in-out;
+          content: "\2794";
+          padding-left: 10px;
+          font-size: 15px;
+        }
+        &:hover {
+          &::after {
+            padding-left: 20px;
+          }
+        }
+        @media (max-width: 575.98px) {
+          font-size: 14px;
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.achivements {
+  padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $red;
+    @media (max-width: 992.98px) {
+      margin: 0 auto;
+      display: block;
+    }
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+
+  .content {
+    background-color: $white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 14px 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    img {
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .box {
+      padding: 25px;
+      @media (max-width: 575.98px) {
+        padding: 20px;
+      }
+      .lr {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 16px;
+          color: $red;
+          font-weight: 500;
+          text-transform: uppercase;
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+          }
+        }
+        h6 {
+          font-size: 16px;
+          color: $red;
+          font-weight: 500;
+          text-transform: uppercase;
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+          }
+        }
+      }
+      h4 {
+        font-size: 20px;
+        color: $grey;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 10px;
+        span {
+          font-weight: 700;
+        }
+        @media (max-width: 992.98px) {
+          text-align: center;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 18px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $light-grey;
+      font-weight: 400;
+      @media (max-width: 992.98px) {
+        text-align: center;
+      }
+      @media (max-width: 575.98px) {
+        text-align: center;
+      }
+    }
+    a {
+      text-decoration: none;
+      button {
+        font-size: 14px;
+        font-weight: 500;
+        color: $red;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        margin: 0;
+        padding: 0;
+        &::after {
+          transition: all 0.5s ease-in-out;
+          content: "\2794";
+          padding-left: 10px;
+          font-size: 15px;
+        }
+        &:hover {
+          background: transparent;
+          &::after {
+            padding-left: 20px;
+          }
+        }
+        @media (max-width: 992.98px) {
+          margin: 0 auto;
+          display: block;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 14px;
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    button {
+      font-size: 22px;
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      background-color: $blue;
+      border-radius: 50px;
+      border: 2px solid $white;
+      transition: all 0.5s ease-in-out;
+      margin: 0 auto;
+      display: block;
+      &:hover {
+        background-color: red;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.gallery {
+  overflow-x: hidden;
+  background-color: #004d900d;
+  padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $red;
+    @media (max-width: 992.98px) {
+      margin: 0 auto;
+      display: block;
+    }
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  a {
+    text-decoration: none;
+    button {
+      font-size: 22px;
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      background-color: $red;
+      border-radius: 50px;
+      border: 2px solid $white;
+      transition: all 0.5s ease-in-out;
+      margin: 0 auto;
+      display: block;
+      &:hover {
+        background-color: $blue;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .box {
+    position: relative;
+    overflow: hidden;
+    img {
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .overlay {
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba($color: $blue, $alpha: 0.7);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        i {
+          font-size: 22px;
+          margin: 10px;
+          color: #ffffff;
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+    &:hover .overlay {
+      opacity: 100%;
+      height: 100%;
+    }
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    @media (max-width: 575.98px) {
+      max-width: 300px;
+    }
+    @media (max-width: 490px) {
+      max-width: 200px;
+      margin-top: 50px;
+    }
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content,
+  #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+}
+// inner banner
+.inner-banner {
+  // margin-top: -35px;
+  min-height: 594px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 992.98px) {
+    text-align: center;
+  }
+  h1 {
+    font-size: 55px;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 40px;
+    }
+  }
+}
+.vikram {
+  min-height: 880px;
+  display: flex;
+  align-items: center;
+  background-color: #12508526;
+  @media (max-width: 992.98px) {
+    background-image: none !important;
+    padding: 50px 0px;
+  }
+  img {
+    display: none;
+    @media (max-width: 992.98px) {
+      display: block !important;
+    }
+  }
+  .content {
+    padding-left: 50px;
+    @media (max-width: 992.98px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    h2 {
+      font-size: 45px;
+      color: $blue;
+      font-weight: 400;
+      text-transform: uppercase;
+      span {
+        font-weight: 700;
+      }
+      @media (max-width: 992.98px) {
+        margin-top: 30px;
+        text-align: center;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 30px;
+      }
+    }
+    .rline {
+      width: 120px;
+      min-height: 3px;
+      background-color: $red;
+      @media (max-width: 992.98px) {
+        margin: 0 auto;
+        display: block;
+      }
+      @media (max-width: 575.98px) {
+        width: 80px;
+      }
+    }
+    p {
+      font-size: 22px;
+      color: $light-grey;
+      font-weight: 400;
+      margin-top: 20px;
+      @media (max-width: 992.98px) {
+        text-align: center;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.our-mission {
+  padding: 80px 0px;
+  background-color: $blue;
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $white;
+    margin: 0 auto;
+    display: block;
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  p {
+    font-size: 22px;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+    }
+  }
+}
+.location {
+  padding: 80px 0px;
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $red;
+    margin: 0 auto;
+    display: block;
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  .box {
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+    padding: 60px 30px;
+    margin: 30px 0px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    &:hover i {
+      color: $red;
+      transform: rotate(30deg);
+    }
+    &:hover a {
+      color: $red;
+    }
+    @media (max-width: 575.98px) {
+      margin: 20px;
+    }
+    i {
+      font-size: 45px;
+      color: $blue;
+      font-weight: 600;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: rotate(30deg);
+        color: $red;
+      }
+    }
+    h6 {
+      font-size: 33px;
+      color: $light-grey;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-top: 20px;
+      @media (max-width: 575.98px) {
+        font-size: 20px;
+      }
+    }
+    a {
+      font-size: 33px;
+      text-decoration: none;
+      color: $blue;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        color: $red;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+.contact-form {
+  min-height: 696px;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  h2 {
+    font-size: 45px;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: $white;
+    margin: 0 auto;
+    display: block;
+    @media (max-width: 575.98px) {
+      width: 80px;
+    }
+  }
+  input {
+    width: 100%;
+    min-height: 62px;
+    background-color: $white;
+    border: none;
+    margin: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    @media (max-width: 575.98px) {
+      width: 80%;
+      min-height: 50px;
+      margin: 5px auto;
+      display: block;
+    }
+  }
+  textarea {
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    background-color: $white;
+    border: none;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    @media (max-width: 575.98px) {
+      width: 80%;
+      min-height: 150px;
+      margin: 5px auto;
+      display: block;
+    }
+  }
+  button {
+    font-size: 22px;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid $white;
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+      background-color: $white;
+      color: $blue;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+    }
+  }
+}
+.teams {
+  padding: 80px 0px;
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  .custom {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 575.98px) {
+      padding: 30px 0px;
+    }
+
+    h2 {
+      font-size: 45px;
+      color: $blue;
+      font-weight: 400;
+      text-transform: uppercase;
+      span {
+        font-weight: 700;
+      }
+      @media (max-width: 992.98px) {
+        margin-top: 30px;
+      }
+      @media (max-width: 575.98px) {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .rline {
+      width: 120px;
+      min-height: 3px;
+      background-color: $red;
+      @media (max-width: 575.98px) {
+        margin: 0 auto;
+        display: block;
+        width: 80px;
+      }
+    }
+    p {
+      font-size: 20px;
+      color: $light-grey;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-top: 20px;
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+}
+.pcontact {
+  padding: 100px 0px;
+  background-color: rgba($color: $blue, $alpha: 0.2);
+  @media (max-width: 575.98px) {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 45px;
+    color: $blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 992.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
+  .rline {
+    width: 120px;
+    min-height: 3px;
+    background-color: #ffffff;
+    @media (max-width: 575.98px) {
+      margin: 0 auto;
+      display: block;
+      width: 80px;
+    }
+  }
+  a {
+    text-decoration: none;
+    button {
+      font-size: 22px;
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      background-color: $red;
+      border-radius: 50px;
+      border: 2px solid transparent;
+      transition: all 0.5s ease-in-out;
+      margin: 0 auto;
+      display: block;
+      &:hover {
+        background-color: $blue;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
